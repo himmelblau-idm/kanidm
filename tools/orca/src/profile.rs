@@ -75,6 +75,7 @@ pub struct ProfileBuilder {
     pub admin_password: String,
     pub idm_admin_password: String,
     pub seed: Option<u64>,
+    #[allow(dead_code)]
     pub extra_uris: Vec<String>,
     // Dimensions of the test to setup.
     pub warmup_time: Option<u64>,
