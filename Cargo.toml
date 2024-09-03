@@ -101,7 +101,7 @@ axum = { version = "0.6.20", features = [
     "tracing",
 ] }
 axum-csp = { version = "0.0.5" }
-base32 = "^0.4.0"
+base32 = "^0.5.1"
 base64 = "^0.22.1"
 base64urlsafedata = "0.5.0"
 bitflags = "^2.6.0"
@@ -124,7 +124,7 @@ fs2 = "^0.4.3"
 futures = "^0.3.30"
 futures-concurrency = "^3.1.0"
 futures-util = { version = "^0.3.30", features = ["sink"] }
-gix = { version = "0.53.1", default-features = false }
+gix = { version = "0.66.0", default-features = false }
 gloo = "^0.8.1"
 gloo-utils = "0.2.0"
 hashbrown = { version = "0.14.3", features = ["serde", "inline-more", "ahash"] }

@@ -439,7 +439,7 @@ async fn run_sync(
 
             let to_state = cookie
                 .map(|cookie| {
-                    ScimSyncState::Active { cookie }
+                    ScimSyncState::Active { cookie: cookie.into() }
                 })
                 .ok_or_else(|| {
                     error!("Invalid state, ldap sync repl did not provide a valid state cookie in response.");

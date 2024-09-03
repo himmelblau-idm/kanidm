@@ -37,6 +37,7 @@ async fn actor_person(
 pub struct EventRecord {
     pub start: Instant,
     pub duration: Duration,
+    #[allow(dead_code)]
     pub details: EventDetail,
 }
 

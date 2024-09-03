@@ -355,7 +355,7 @@ async fn run_sync(
 
             let to_state = if let Some(cookie) = cookie {
                 // Only update the cookie if it's present - openldap omits!
-                ScimSyncState::Active { cookie }
+                ScimSyncState::Active { cookie: cookie.into() }
             } else {
                 info!("no changes required");
                 return Ok(());
