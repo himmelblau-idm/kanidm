@@ -20,7 +20,7 @@ async-trait = { workspace = true }
 axum = { workspace = true }
 axum-auth = "0.7.0"
 axum-csp = { workspace = true }
-axum-macros = "0.4.1"
+axum-macros = "0.4.2"
 axum-server = { version = "0.7.1", features = ["tls-openssl"] }
 bytes = { workspace = true }
 chrono = { workspace = true }
@@ -51,8 +51,8 @@ tokio = { workspace = true, features = ["net", "sync", "io-util", "macros"] }
 tokio-openssl = { workspace = true }
 tokio-util = { workspace = true, features = ["codec"] }
 toml = { workspace = true }
-tower = { version = "0.5.0", features = ["tokio-stream", "tracing"] }
-tower-http = { version = "0.5.2", features = [
+tower = { version = "0.5.1", features = ["tokio-stream", "tracing"] }
+tower-http = { version = "0.6.1", features = [
     "compression-gzip",
     "fs",
     "tokio",
